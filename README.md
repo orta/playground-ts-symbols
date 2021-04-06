@@ -1,17 +1,19 @@
-## TypeScript Playground Plugin
+## Playground TS Symbols
 
-My new plugin for the TypeScript playground.
+A TypeScript playground plugin which shows the symbols added by code in the playground.
+
+![./symbols.png](./symbols.png)
 
 ## Running this plugin
 
-- [Click this link](https://www.typescriptlang.org/play?install-plugin=[name]) to install
+- [Click this link](https://www.typescriptlang.org/play?install-plugin=playground-ts-symbols) to install
 
 or
 
 - Open up the TypeScript Playground
 - Go the "Plugins" in the sidebar
 - Look for "Plugins from npm"
-- Add "[name]"
+- Add "playground-ts-symbols"
 - Reload the browser
 
 Then it will show up as a tab in the sidebar.
@@ -21,7 +23,7 @@ Then it will show up as a tab in the sidebar.
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full details, however, TLDR:
 
 ```sh
-git clone ...
+git clone https://github.com/orta/playground-ts-symbols
 yarn install
 yarn start
 ```

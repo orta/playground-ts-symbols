@@ -2,14 +2,14 @@
   "name": "playground-ts-symbols",
   "version": "0.0.1",
   "main": "dist/index.js",
-  "description": "My playground plugin",
+  "description": "Shows the compiler symbols which are created by your playground code",
   "license": "MIT",
   "keywords": [
     "playground-plugin"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/[you]/[repo]"
+    "url": "https://github.com/orta/playground-ts-symbols"
   },
   "scripts": {
     "build": "rollup -c rollup.config.js",
