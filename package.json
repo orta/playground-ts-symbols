@@ -1,6 +1,6 @@
 {
   "name": "playground-ts-symbols",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "description": "Shows the compiler symbols which are created by your playground code",
   "license": "MIT",

@@ -64,7 +64,39 @@ const makePlugin = (utils: PluginUtils) => {
             resDS.createASTTree(d, {closedByDefault: true})
           })
 
-          const flags = getEnumFlagNames(sandbox.ts.SymbolFlags, symbol.flags)
+
+          const allowed = [
+"FunctionScopedVariable",
+"BlockScopedVariable",
+"Property",
+"EnumMember",
+"Function",
+"Class",
+"Interface",
+"ConstEnum",
+"RegularEnum",
+"ValueModule",
+"NamespaceModule",
+"TypeLiteral",
+"ObjectLiteral",
+"Method",
+"Constructor",
+"GetAccessor",
+"SetAccessor",
+"Signature",
+"TypeParameter",
+"TypeAlias",
+"ExportValue",
+"Alias",
+"Prototype",
+"ExportStar",
+"Optional",
+"Transient",
+"Assignment",
+"ModuleExports",
+          ]
+          const flags = getEnumFlagNames(sandbox.ts.SymbolFlags, symbol.flags).filter(f => allowed.includes(f))
+          
           resDS.p(`Flags: ${flags.join(", ")}`)
         });
       }
